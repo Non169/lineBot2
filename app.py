@@ -22,7 +22,7 @@ def callback():
     decoded = json.loads(json_line)
     user = decoded['originalDetectlntentRequest']['payload']['data']['replyToken']
     userText = decoded['queryResult']['intent']['displayName']
-    # sendText(user,userText)
+    #sendText(user,userText)
     if (userText == 'สวัดดี') :
         sendText(user,'สวัดดีเธอชื่ออ่ะไรหรอ')
     elif (userText == 'ฉันชื่อดอร่า') :
